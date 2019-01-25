@@ -1,0 +1,3 @@
+https://medium.com/@suraj.jayakumar/tonenet-a-musical-style-transfer-c0a18903c910
+http://imanmalik.com/cs/2017/06/05/neural-style.html
+https://github.com/sjayakum/csci599-final-project
