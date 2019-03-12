@@ -67,7 +67,7 @@ The goal here is to use **Reinforcement Learning** to teaches the model to follo
 For that a couple of **metrics** are defined: 
 First those that we want to be low, they are associated with **penalties**:
 - **Notes not in key**
-- Mean **autocorrelation** (log1 - log2 - log3) : *the goal is to encourage variety, so the model is penalized if the composition is highly correlated with itself
+- Mean **autocorrelation** (log1 - log2 - log3) : *the goal is to encourage variety, so the model is penalized if the composition is highly correlated with itself*
 - Notes **excessively repeated**: *LSTM are prone to repeate the same patterns, Reinforcement Learning is used here to act as a more creative approach*
 
 Then, those that we want to be high, they are associated with **rewards**:
