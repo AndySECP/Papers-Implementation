@@ -17,13 +17,13 @@ In this sections, we are analysing different state of the art approach for gener
 
 To have a good understanding of the problem and the possible approaches, I am analysing here the more relevant papers in the domain.
 
-### Toward Adaptive Music Generation By Reinforcement Learning of Musical Tension
+### Toward Adaptive Music Generation By Reinforcement Learning of Musical Tension - 2010
 
 **Goal**: to teach the musical agent to choose sequences of musical gesture that will **improve the musical tension perceived** by the listener. **Reinforcement Learning with emotional feedbacks** given by the listener in real time is used. The main goal here is to optimize the emotions felt by the listeners. 
 
 Music is modulated by three parameters: **articulation**, **tempo** and **dynamic**, to implement the perception of musical tension. We want to keep **balance between predictability and surprise**.
 
-### DeepJ: Style Specific Music Generation
+### DeepJ: Style Specific Music Generation - 2018
 
 Generative model capable of composing music conditioned on a specific mixture of composer styles. 
 Model architecture: **Biaxial LSTM**
@@ -35,7 +35,7 @@ Concerning the evaluation of the model, three approach are used:
 - **Style Analysis**: **Survey people with musical background** and ask them to classify music generated as baroque, classical or romantic (Can the model produces stylistically distinct musics)
 - **Visualizing style embedding space using tSNE**: analyse the capacity of the model to learn style, composers from similar classical periods tend to cluster together 
 
-### Midinet: A Convolutional Generative Adversarial Network for Symbolic Domain Music Generation
+### Midinet: A Convolutional Generative Adversarial Network for Symbolic Domain Music Generation - 2017
 
 Uses **CNNs for generating** melody one bar after another in the symbolic domain and uses a **discriminator to learn the distribution** of melodies, which makes it a **GAN**. 
 
@@ -43,7 +43,7 @@ To **emulate creativity** and encorage diverse generation result, a **random noi
 
 Data representation: The MIDI file is divided into bars. That way, the note events of a MIDI channel can be represented as a HxW real-valued matrix X. *h: number of notes to consider* *w: number of timesteps used in a bar*
 
-### MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment
+### MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment - 2017
 
 In this paper, to cope with the grouping of notes, bars are used instead of notes as the basic compositional unit. Therefore, music is generated one bar after another using **CNN**, which are good for finding local, translation invariant patterns.
 
@@ -60,7 +60,7 @@ Concerning the model trained in this paper, it:
 - produces some noise
 
 
-### Tuning Recurrent Neural Network with Reinforcement Learning
+### Tuning Recurrent Neural Network with Reinforcement Learning - 2016
 
 The goal here is to use **Reinforcement Learning** to teaches the model to follow certain rules, while still allowing it to retain information learned from data.
 
