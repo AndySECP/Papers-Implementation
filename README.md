@@ -21,6 +21,16 @@ To have a good understanding of the problem and the possible approaches, I am an
 
 ### DeepJ: Style Specific Music Generation
 
+Generative model capable of composing music conditioned on a specific mixture of composer styles. 
+Model architecture: **Biaxial LSTM**
+
+For each timestep, at each note, the model produces three outputs: **play probability**, **replay probability** and **dynamics**. There are trained simultaneously using different loss functions: the Binary Cross Entropy for play and replay and the Mean Square Error for dynamics. 
+
+Concerning the evaluation of the model, three approach are used:
+- **User survey**: listen a list of pair of sample and decide **which one produce better sounding music**
+- **Style Analysis**: **Survey people with musical background** and ask them to classify music generated as baroque, classical or romantic (Can the model produces stylistically distinct musics)
+- **Visualizing style embedding space using tSNE**: analyse the capacity of the model to learn style, composers from similar classical periods tend to cluster together 
+
 ### Midinet: A Convolutional Generative Adversarial Network for Symbolic Domain Music Generation
 
 Uses **CNNs for generating** melody one bar after another in the symbolic domain and uses a **discriminator to learn the distribution** of melodies, which makes it a **GAN**. 
