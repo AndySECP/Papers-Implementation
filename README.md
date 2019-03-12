@@ -62,4 +62,21 @@ Concerning the model trained in this paper, it:
 
 ### Tuning Recurrent Neural Network with Reinforcement Learning
 
+The goal here is to use **Reinforcement Learning** to teaches the model to follow certain rules, while still allowing it to retain information learned from data.
+
+For that a couple of **metrics** are defined: 
+First those that we want to be low, they are associated with **penalties**:
+- **Notes not in key**
+- Mean **autocorrelation** (log1 - log2 - log3) : *the goal is to encourage variety, so the model is penalized if the composition is highly correlated with itself
+- Notes **excessively repeated**: *LSTM are prone to repeate the same patterns, Reinforcement Learning is used here to act as a more creative approach*
+
+Then, those that we want to be high, they are associated with **rewards**:
+- Compositions **starting with tonic note**
+- **Leaps resolved**: *we want to avoid akward interval, so when it is too large, we move back to the opposite direction. In a RL term: leaping two times in the same direction is negatively rewarded*
+- Composition with **unique max note**
+- Composition with **unique min note** 
+- **Note in motif**: *model are rewarded to play motifs: succession of notes representing a short musical "idea"*
+- **Note in repeated motif**
+
+Those metrics define a kind of **music theory rule**. The degree of improvement on these metrics is determined by the extend of the reward given for the particular behavior. This way, we can give more emphasis on some metrics that are considered more important. For instance, in the model run in this paper, a strong penalty is given each time a note is excessively repeated (-100), while a much smaller reward is given at the end of the composition for a unique extrema note. The choice of the metrics as well as the weights define the shape of the musics we want to create. 
 
