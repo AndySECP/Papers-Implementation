@@ -19,6 +19,10 @@ To have a good understanding of the problem and the possible approaches, I am an
 
 ### Toward Adaptive Music Generation By Reinforcement Learning of Musical Tension
 
+**Goal**: to teach the musical agent to choose sequences of musical gesture that will **improve the musical tension perceived** by the listener. **Reinforcement Learning with emotional feedbacks** given by the listener in real time is used. The main goal here is to optimize the emotions felt by the listeners. 
+
+Music is modulated by three parameters: **articulation**, **tempo** and **dynamic**, to implement the perception of musical tension. We want to keep **balance between predictability and surprise**.
+
 ### DeepJ: Style Specific Music Generation
 
 Generative model capable of composing music conditioned on a specific mixture of composer styles. 
