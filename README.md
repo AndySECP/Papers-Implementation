@@ -23,9 +23,15 @@ To have a good understanding of the problem and the possible approaches, I am an
 
 ### Midinet: A Convolutional Generative Adversarial Network for Symbolic Domain Music Generation
 
+Uses **CNNs for generating** melody one bar after another in the symbolic domain and uses a **discriminator to learn the distribution** of melodies, which makes it a **GAN**. 
+
+To **emulate creativity** and encorage diverse generation result, a **random noise is used as input** to the generator CNN.
+
+Data representation: The MIDI file is divided into bars. That way, the note events of a MIDI channel can be represented as a HxW real-valued matrix X. *h: number of notes to consider* *w: number of timesteps used in a bar*
+
 ### MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment
 
-In this paper, to cope with the grouping of notes, bars are used instead of notes as the basic compositional unit. Therefore, music is generated one bar after another using CNN, which are good for finding local, translation invariant patterns.
+In this paper, to cope with the grouping of notes, bars are used instead of notes as the basic compositional unit. Therefore, music is generated one bar after another using **CNN**, which are good for finding local, translation invariant patterns.
 
 An interesting approach in this paper is the evaluation metrics used. Five main characteristics we want our network to have are defined and used to train the network. Then, we can evaluate each of them and assess how well the prediction is doing. The metrics are:
 - EB: ration of **empty bars**
