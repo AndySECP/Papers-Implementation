@@ -48,7 +48,7 @@ Data representation: The MIDI file is divided into bars. That way, the note even
 In this paper, to cope with the grouping of notes, bars are used instead of notes as the basic compositional unit. Therefore, music is generated one bar after another using **CNN**, which are good for finding local, translation invariant patterns.
 
 An interesting approach in this paper is the evaluation metrics used. Five main characteristics we want our network to have are defined and used to train the network. Then, we can evaluate each of them and assess how well the prediction is doing. The metrics are:
-- EB: ration of **empty bars**
+- EB: ratio of **empty bars**
 - UPC: number of **used pitch classes** per batch (from 0 to 12)
 - QN: ratio of **"qualified notes"**. Here, a note longer than three time steps is considered to be qualified. QN shows if the music is overly fragmented.
 - DP: (**Drum Pattern**) Ratio of notes in 8- or 16- beat patterns
