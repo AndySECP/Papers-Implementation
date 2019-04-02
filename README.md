@@ -11,7 +11,7 @@ Link:  https://arxiv.org/pdf/1508.06576.pdf
 
 Abstract: *"In ﬁne art,especially painting,humans have mastered the skills to create unique visual experiences through composing a complex interplay between the content and style of an image. [...] Here we introduce an artiﬁcial system based on a Deep Neural Network that creates artistic images of high perceptual quality. The system uses neural representations to separate and recombine content and style of arbitrary images, providing a neural algorithm for the creation of artistic images. Moreover, in light of the striking similarities between performance-optimised artiﬁcial neural networks and biological vision, our work offers a path forward to an algorithmic understanding of how humans create and perceive artistic imagery."* (From the paper)
 
-## Music Style Transfer Papers
+## Music Generation Papers
 
 In this sections, we are analysing different state of the art approach for generating music using Deep Learning. This problem has numerous challenges: How do we encode the data? How to respect the main musical rules? How to learn the style of a specific artist? How to make a composition sound more human? How to evaluate how good is our generation? how to make our algorithm creative, while still respecting some rules? 
 
