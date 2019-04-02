@@ -30,7 +30,7 @@ Model architecture: **Biaxial LSTM**
 
 For each timestep, at each note, the model produces three outputs: **play probability**, **replay probability** and **dynamics**. There are trained simultaneously using different loss functions: the Binary Cross Entropy for play and replay and the Mean Square Error for dynamics. 
 
-Concerning the evaluation of the model, three approach are used:
+Concerning the evaluation of the model, three approaches are used:
 - **User survey**: listen a list of pair of sample and decide **which one produce better sounding music**
 - **Style Analysis**: **Survey people with musical background** and ask them to classify music generated as baroque, classical or romantic (Can the model produces stylistically distinct musics)
 - **Visualizing style embedding space using tSNE**: analyse the capacity of the model to learn style, composers from similar classical periods tend to cluster together 
