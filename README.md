@@ -13,7 +13,7 @@ Abstract: *"In ﬁne art,especially painting,humans have mastered the skills to 
 
 ## Music Generation Papers
 
-In this sections, we are analysing different state of the art approach for generating music using Deep Learning. This problem has numerous challenges: How do we encode the data? How to respect the main musical rules? How to learn the style of a specific artist? How to make a composition sound more human? How to evaluate how good is our generation? how to make our algorithm creative, while still respecting some rules? 
+In this sections, we are analysing different state of the art approach for generating music using Deep Learning. This problem has numerous challenges: How do we encode the data? How to respect the main musical rules? How to learn the style of a specific artist? How to make a composition sound more human? How to evaluate how good is our generation? How to make our algorithm creative, while still respecting some rules? 
 
 To have a good understanding of the problem and the possible approaches, I am analysing here the more relevant papers in the domain.
 
